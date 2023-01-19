@@ -2,8 +2,114 @@
   "intents" : [
     {
       "tag": "greetings",
-      "patterns": ["hello", "hey", "hi", "good day", "greetings", "what's up?" , "how is it going?"],
+      "patterns": ["hello", "hey", "hi", "good day", "greetings"],
       "responses" : ["Hello!", "Hey!", "What can I do for you?"]
+    },
+    {
+      "tag": "greetings with care",
+      "patterns": ["how are you?", "what's up", "hi", "what's up?" , "how is it going?"],
+      "responses" : ["I'm fine!! How about you?", "I'm good bro and you?", "Fineeeeee, and you?"]
+    },
+    {
+    "tag": "weather",
+    "patterns": [
+        "What's the weather like today?",
+        "Will it rain today?",
+        "How hot will it be today?",
+        "What's the forecast for tomorrow?",
+        "Is it going to be sunny this weekend?"
+    ],
+    "responses": [
+        "I'm sorry, I'm not able to give you the weather information. But you can check your local weather forecast.",
+        "I'm sorry, I can't give you the weather forecast. Please check your local forecast."
+    ]
+},
+    {
+    "tag": "time",
+    "patterns": [
+        "What time is it?",
+        "Can you tell me the time?",
+        "What's the current time?",
+        "Can you give me the current time?"
+    ],
+    "responses": [
+        "I'm sorry, I'm not able to give you the current time. You can check your device for the current time.",
+        "I'm sorry, I can't give you the current time. Please check your device for the time."
+    ]
+},
+    {
+    "tag": "location",
+    "patterns": [
+        "Where am I?",
+        "Can you tell me my location?",
+        "What's my current location?",
+        "Can you give me my current location?"
+    ],
+    "responses": [
+        "I'm sorry, I'm not able to give you your current location. You can check your device for your current location.",
+        "I'm sorry, I can't give you your current location. Please check your device for your current location."
+    ]
+},
+    {
+    "tag": "joke",
+    "patterns": [
+        "Tell me a joke",
+        "I need a good laugh",
+        "Can you make me laugh?",
+        "I'm feeling down, can you cheer me up with a joke?"
+    ],
+    "responses": [
+        "Why don't scientists trust atoms? Because they make up everything",
+        "Why was the math book sad? Because it had too many problems.",
+        "Why did the tomato turn red? Because it saw the salad dressing!",
+        "Why did the cookie go to the doctor? Because it was feeling crumbly."
+    ]
+},
+    {
+    "tag": "food",
+    "patterns": [
+        "What should I eat?",
+        "I'm hungry, what's good to eat?",
+        "I'm craving something sweet, what should I have?",
+        "What are some healthy meal options?",
+        "I'm looking for a good restaurant, do you have any recommendations?"
+    ],
+    "responses": [
+        "I'm sorry, I'm not able to give you food recommendations. You can check for some food blogs or pages for some suggestions.",
+        "I'm sorry, I can't give you food recommendations. Please check for some food blogs or pages for some suggestions."
+    ]
+},
+    {
+    "tag": "entertainment",
+    "patterns": [
+        "What should I watch?",
+        "I'm bored, what's good to watch?",
+        "What are some good movies to watch?",
+        "What are some good TV series to watch?",
+        "I'm looking for a good book to read, do you have any recommendations?"
+    ],
+    "responses": [
+        "I'm sorry, I'm not able to give you entertainment recommendations. You can check for some entertainment blogs or pages for some suggestions.",
+        "I'm sorry, I can't give you entertainment recommendations. Please check for some entertainment blogs or pages for some suggestions."
+    ]
+},{
+    "tag": "travel",
+    "patterns": [
+        "I want to go on vacation, where should I go?",
+        "What are some good places to visit?",
+        "I want to travel somewhere warm, where should I go?",
+        "What are some good travel deals?",
+        "I'm looking for a good travel agent, do you have any recommendations?"
+    ],
+    "responses": [
+        "I'm sorry, I'm not able to give you travel recommendations. You can check for some travel blogs or pages for some suggestions.",
+        "I'm sorry, I can't give you travel recommendations. Please check for some travel blogs or pages for some suggestions."
+    ]
+},
+    {
+      "tag": "greetings with response",
+      "patterns": ["I'm fine", "fine", "good", "I'm good too" , "good"],
+      "responses" : ["I'm glad you are fine, so how can I help you?"]
     },
     {
       "tag": "goodbye",
