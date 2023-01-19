@@ -1,10 +1,30 @@
 {
   "intents" : [
     {
-      "tag": "greetings",
-      "patterns": ["hello", "hey", "hi", "good day", "greetings"],
-      "responses" : ["Hello!", "Hey!", "What can I do for you?"]
-    },
+    "tag": "greeting",
+    "patterns": [
+        "Hi",
+        "Hello",
+        "Good morning",
+        "Good afternoon",
+        "Good evening",
+        "What's up?",
+        "Hey",
+        "Yo",
+        "Sup"
+    ],
+    "responses": [
+        "Hello! My name is Jeloy, how can I help you?",
+        "Hi there! My name is Jeloy, what can I do for you?",
+        "Good morning! My name is Jeloy, how can I assist you today?",
+        "Good afternoon! My name is Jeloy, how can I help you?",
+        "Good evening! My name is Jeloy, what can I do for you?",
+        "Not much, just here to help you. How can I assist you?",
+        "Hey there! How can I help you?",
+        "Yo! What can I do for you?",
+        "Sup! How can I assist you today?"
+    ]
+},
     {
       "tag": "greetings with care",
       "patterns": ["how are you?", "what's up", "hi", "what's up?" , "how is it going?"],
@@ -72,13 +92,58 @@
         "I'm hungry, what's good to eat?",
         "I'm craving something sweet, what should I have?",
         "What are some healthy meal options?",
-        "I'm looking for a good restaurant, do you have any recommendations?"
+        "I'm looking for a good restaurant, do you have any recommendations?",
+        "Can you recommend a good restaurant?",
+        "I'm craving [specific food], where can I find it?",
+        "What are some must-try local dishes?",
+        "I want to try [cuisine] food, where can I find it?"
     ],
     "responses": [
         "I'm sorry, I'm not able to give you food recommendations. You can check for some food blogs or pages for some suggestions.",
         "I'm sorry, I can't give you food recommendations. Please check for some food blogs or pages for some suggestions."
     ]
 },
+      {
+    "tag": "sports",
+    "patterns": [
+        "What are the latest sports news?",
+        "What's the score of the [team/event] game?",
+        "Who's playing today?",
+        "What are the upcoming games?",
+        "Can you give me the sports schedule?"
+    ],
+    "responses": [
+        "I'm sorry, I'm not able to give you sports news. You can check for some sports news website or apps for the latest updates.",
+        "I'm sorry, I can't give you sports news. Please check for some sports news website or apps for the latest updates."
+    ]
+},
+      {
+    "tag": "coding_help",
+    "patterns": [
+        "I need help with my code",
+        "I'm stuck on a coding problem",
+        "Can you help me debug my code?",
+        "I'm not sure how to fix this error",
+        "I'm having trouble understanding this concept"
+    ],
+    "responses": [
+        "I'd be happy to help you with your code! Can you please provide me with more information on the problem or error you're experiencing?",
+        "Sure, I'll do my best to help you with your coding problem. Can you please give me more details on what you're trying to accomplish?",
+        "I can help you debug your code. Can you please share the code or the error message you're encountering?",
+        "I'd be happy to help you understand this concept better. Can you please give me more details on what you're trying to learn?"
+    ]
+},
+      {
+    "tag": "coding_language",
+    "patterns": [
+        "What's the best coding language for [problem/task]?",
+        "Which coding language should I learn?",
+        "What are the differences between [language1] and [language2]?",
+        "Which language is best for [industry/field]?"
+    ],
+    "responses": [
+        "The best coding language for a specific problem or task depends on the requirements and constraints of that problem. I would recommend researching and evaluating the options based on your needs."]
+      },
     {
     "tag": "entertainment",
     "patterns": [
@@ -90,7 +155,8 @@
     ],
     "responses": [
         "I'm sorry, I'm not able to give you entertainment recommendations. You can check for some entertainment blogs or pages for some suggestions.",
-        "I'm sorry, I can't give you entertainment recommendations. Please check for some entertainment blogs or pages for some suggestions."
+        "I'm sorry, I can't give you entertainment recommendations. Please check for some entertainment blogs or pages for some suggestions.","I'm sorry, I'm not able to give you travel information. You can check for some travel blogs or pages for some suggestions.",
+        "I'm sorry, I can't give you travel information. Please check for some travel blogs or pages for some suggestions."
     ]
 },{
     "tag": "travel",
@@ -99,7 +165,12 @@
         "What are some good places to visit?",
         "I want to travel somewhere warm, where should I go?",
         "What are some good travel deals?",
-        "I'm looking for a good travel agent, do you have any recommendations?"
+        "I'm looking for a good travel agent, do you have any recommendations?",
+        "What are the best places to travel?",
+        "What are the most popular tourist destinations?",
+        "I want to plan a trip, where should I go?",
+        "What are the must-see places for a vacation?",
+        "What are the best places for a honeymoon?"
     ],
     "responses": [
         "I'm sorry, I'm not able to give you travel recommendations. You can check for some travel blogs or pages for some suggestions.",
@@ -112,6 +183,20 @@
       "responses" : ["I'm glad you are fine, so how can I help you?"]
     },
     {
+    "tag": "sport",
+    "patterns": [
+        "What's the score of the game?",
+        "Which team won the match?",
+        "What are the standings of the league?",
+        "I want to watch a game, which channel is it on?",
+        "What are the upcoming games for my team?"
+    ],
+    "responses": [
+        "I'm sorry, I'm not able to give you sport information. You can check for some sport blogs or pages for some suggestions.",
+        "I'm sorry, I can't give you sport information. Please check for some sport blogs or pages for some suggestions."
+    ]
+},
+    {
       "tag": "goodbye",
       "patterns": ["bye", "goodbye", "see ya", "see you next time", "chao", "bye bro" , "bye sis"],
       "responses" : ["Noooo , Dont say goodbye :( just kidding ", "See you next time!", "Bye Muah"]
@@ -121,6 +206,34 @@
       "patterns": ["how old", "how old are you?", "what is your age?"],
       "responses" : ["Mark Anjelo Perez is the one who made me and he is 20 years old!", "20 years old!"]
     },
+    {
+    "tag": "music",
+    "patterns": [
+        "What's the name of this song?",
+        "Who is the artist?",
+        "What are the lyrics?",
+        "What are the top songs of the week?",
+        "I want to listen to some music, what do you recommend?"
+    ],
+    "responses": [
+        "I'm sorry, I'm not able to give you music information. You can check for some music blogs or pages for some suggestions.",
+        "I'm sorry, I can't give you music information. Please check for some music blogs or pages for some suggestions."
+    ]
+},
+    {
+    "tag": "news",
+    "patterns": [
+        "What's the latest news?",
+        "What's happening in the world?",
+        "What are the top headlines?",
+        "What's the news on [specific topic]?",
+        "Can you tell me about the latest events?"
+    ],
+    "responses": [
+        "I'm sorry, I'm not able to give you the latest news. You can check for some news website or apps for the latest updates.",
+        "I'm sorry, I can't give you the latest news. Please check for some news website or apps for the latest updates."
+    ]
+},
     {
       "tag": "name",
       "patterns": ["What is your name?", "What should I call you?", "what's your name?", "who are you?", "can you tell me your name?"],
@@ -136,6 +249,20 @@
       "patterns": ["when are you guys open?", "what are your hours?", "hours of operation"],
       "responses" : ["24/7"]
     },
+    {
+    "tag": "technology",
+    "patterns": [
+        "What's the latest technology news?",
+        "What are the new smartphones coming out?",
+        "What are the new laptops coming out?",
+        "What are the new features of the latest software?",
+        "What are the new updates for my device?"
+    ],
+    "responses": [
+        "I'm sorry, I'm not able to give you the latest technology news. You can check for some technology blogs or pages for the latest updates.",
+        "I'm sorry, I can't give you the latest technology news. Please check for some technology blogs or pages for the latest updates."
+    ]
+},
     {
       "tag": "stocks",
       "patterns": ["What stocks must I own?", "stocks to own", "best stocks"],
