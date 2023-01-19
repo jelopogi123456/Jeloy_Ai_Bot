@@ -25,6 +25,18 @@
         "Sup! How can I assist you today?"
     ]
 },
+      {"tag": "mental health",
+"patterns": ["I'm feeling really down, can you talk to me?", "I'm having a hard time coping with something, can you help?", "I'm feeling overwhelmed, can you help me process my emotions?"],
+"responses": ["I'm here to listen and support you. Tell me more about what's been going on and how you've been feeling.", "It's important to take care of our mental health. Can you tell me more about what's been causing you to feel this way?", "It's okay to not be okay, and it's important to talk about our emotions. How can I support you in this moment?"]
+      },
+      {"tag": "grief",
+"patterns": ["I lost someone I loved, can you talk to me about it?", "I'm struggling to cope with a loss, can you help?", "I can't stop thinking about someone who passed away, can you help me process my emotions?"],
+"responses": ["Losing someone we care about is never easy. I'm here to listen and support you as you grieve.", "Grief can be a difficult and overwhelming process. Can you tell me more about your loved one and how you're feeling?", "It's important to take the time to grieve and process our emotions. How can I support you in this difficult time?"]
+      },
+      {"tag": "trauma",
+"patterns": ["I've been through something traumatic, can you talk to me about it?", "I'm struggling to cope with a traumatic experience, can you help?", "I can't stop thinking about a traumatic event, can you help me process my emotions?"],
+"responses": ["Trauma can have a deep and lasting impact on our lives. I'm here to listen and support you as you process your experience.", "Trauma can be difficult to talk about, but it's important to work through our emotions. Can you tell me more about what happened?", "It's important to take the time to process our traumatic experiences and work through our emotions. How can I support you in this process?"]
+      },
     {
       "tag": "greetings with care",
       "patterns": ["how are you?", "what's up", "hi", "what's up?" , "how is it going?"],
@@ -267,6 +279,23 @@
       "tag": "stocks",
       "patterns": ["What stocks must I own?", "stocks to own", "best stocks"],
       "responses" : ["The best stocks to own are the 'Blue Chip' companies like : 'SM', 'AC','JFC','JGS', etc.."]
-    }
+    },
+      {"tag": "tokenize",
+"patterns": ["Tokenize this sentence", "Split this sentence into words", "Divide this sentence into tokens"],
+"responses": ["I can use the nltk library's word_tokenize() function to tokenize the sentence for you.", "Sure, I can use the nltk library's word_tokenize() function to split the sentence into words for you.", "I can use the nltk library's word_tokenize() function to divide the sentence into tokens for you."]
+      },
+      {"tag": "stem",
+"patterns": ["Reduce this word to its root form", "Find the stem of this word", "Stem this word"],
+"responses": ["I can use the nltk library's PorterStemmer or SnowballStemmer to reduce the word to its root form for you.", "Sure, I can use the nltk library's PorterStemmer or SnowballStemmer to find the stem of the word for you.", "I can use the nltk library's PorterStemmer or SnowballStemmer to stem the word for you."]
+      },
+      {"tag": "lemmatize",
+"patterns": ["Reduce this word to its base form", "Find the lemma of this word", "Lemmatize this word"],
+"responses": ["I can use the nltk library's WordNetLemmatizer to reduce the word to its base form for you.", "Sure, I can use the nltk library's WordNetLemmatizer to find the lemma of the word for you.", "I can use the nltk library's WordNetLemmatizer to lemmatize the word for you."]
+      },
+      {"tag": "remove_stop_words",
+"patterns": ["Remove stop words from this text", "Eliminate stop words from this text", "Delete stop words from this text"],
+"responses": ["I can use the nltk library's stopwords list and the list comprehension method to remove stop words from the text for you.", "Sure, I can use the nltk library's stopwords list and the list comprehension method to eliminate stop words from the text for you.", "I can use the nltk library's stopwords list and the list comprehension method to delete stop words from the text for you."]
+      }
+
   ]
 }
