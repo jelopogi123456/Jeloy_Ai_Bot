@@ -288,6 +288,116 @@
 "patterns": ["Reduce this word to its root form", "Find the stem of this word", "Stem this word"],
 "responses": ["I can use the nltk library's PorterStemmer or SnowballStemmer to reduce the word to its root form for you.", "Sure, I can use the nltk library's PorterStemmer or SnowballStemmer to find the stem of the word for you.", "I can use the nltk library's PorterStemmer or SnowballStemmer to stem the word for you."]
       },
+
+      {"tag": "breakup",
+"patterns": ["I just got dumped, can you talk to me?", "I can't stop thinking about my ex, can you help?", "I'm struggling to cope with a breakup, can you help me process my emotions?"],
+"responses": ["Breakups can be tough, I'm here to listen and support you as you process your feelings.", "It's normal to have a difficult time after a breakup. Can you tell me more about what happened and how you're feeling?", "Moving on from a relationship can be hard. How can I support you in this difficult time?"]
+      },
+      {"tag": "loss",
+"patterns": ["I lost my job, can you talk to me about it?", "I'm struggling to cope with a loss, can you help?", "I'm feeling lost after a major change, can you help me process my emotions?"],
+"responses": ["Losing something important can be difficult. I'm here to listen and support you as you process your feelings.", "Change can be difficult to navigate. Can you tell me more about what happened and how you're feeling?", "It's normal to feel lost after a major change. How can I support you in this difficult time?"]
+      },
+      {"tag": "grief",
+"patterns": ["I lost a loved one, can you talk to me about it?", "I'm struggling to cope with a loss, can you help?", "I can't stop thinking about someone who passed away, can you help me process my emotions?"],
+"responses": ["Losing a loved one is never easy. I'm here to listen and support you as you grieve.", "Grief can be a difficult and overwhelming process. Can you tell me more about your loved one and how you're feeling?", "It's important to take the time to grieve and process our emotions. How can I support you in this difficult time?"]
+      },
+    {"tag": "bereavement",
+"patterns": ["I lost my parent, can you talk to me about it?", "I'm struggling to cope with the loss of my parent, can you help?", "I can't stop thinking about my parent who passed away, can you help me process my emotions?"],
+"responses": ["Losing a parent is a difficult and painful experience. I'm here to listen and support you as you grieve.", "Grief can be a difficult and overwhelming process. Can you tell me more about your parent and how you're feeling?", "It's important to take the time to grieve and process our emotions. How can I support you during this difficult time?"]
+},
+    {"tag": "miscarriage",
+"patterns": ["I lost a baby, can you talk to me about it?", "I'm struggling to cope with a miscarriage, can you help?", "I can't stop thinking about the baby I lost, can you help me process my emotions?"],
+"responses": ["Miscarriage can be a difficult and painful experience. I'm here to listen and support you as you grieve.", "Grief can be a difficult and overwhelming process. Can you tell me more about the baby and how you're feeling?", "It's important to take the time to grieve and process our emotions. How can I support you during this difficult time?"]
+},
+    {"tag": "pet loss",
+"patterns": ["I lost my pet,I lost my dog, My cat is dead,  can you talk to me about it?", "I'm struggling to cope with the loss of my pet, can you help?", "I can't stop thinking about my pet who passed away, can you help me process my emotions?"],
+"responses": ["Losing a pet can be a difficult and painful experience. I'm here to listen and support you as you grieve.", "Grief can be a difficult and overwhelming process. Can you tell me more about your pet and how you're feeling?", "It's important to take the time to grieve and process our emotions. How can I support you during this difficult time?"]
+},
+    {"tag": "comedy",
+"patterns": ["That's hilarious!", "I can't stop laughing", "You're so funny"],
+"responses": ["I'm glad you find it funny. Can you tell me more about what you found amusing?", "I'm glad you're enjoying the comedy. How can I make you laugh more?", "I try my best to be funny, glad you appreciate it. Can you tell me what you find funny about it?"]
+},
+    {"tag": "adventure",
+"patterns": ["Let's go on an adventure", "I'm craving some excitement", "I want to explore"],
+"responses": ["I'm excited to go on an adventure with you. Can you tell me more about what kind of adventure you had in mind?", "I'm always up for some excitement. How can I join you in your adventure?", "Exploring new places is always exciting. Can you tell me more about the places you want to explore?"]
+},
+    {"tag": "scary",
+"patterns": ["That was so scary!", "I'm terrified", "I can't stop shaking"],
+"responses": ["I'm sorry you found it scary. Can you tell me more about what scared you?", "Being scared can be thrilling, but I understand if it's too much. How can I help you feel better?", "It's okay to be scared. Can you tell me more about what you experienced that caused you to feel scared?"]
+},
+    {"tag": "thriller",
+"patterns": ["I can't believe what just happened", "That was intense", "I'm on the edge of my seat"],
+"responses": ["I'm glad you found it intense. Can you tell me more about what made it so intense?", "I know right! How can I keep you on the edge of your seat?", "I'm glad you're enjoying the thrill. Can you tell me more about what you found thrilling?"]
+},{"tag": "action",
+"patterns": ["That was so action-packed!", "I can't stop watching", "I love the chase scenes"],
+"responses": ["I'm glad you enjoyed the action. Can you tell me more about what you found exciting?", "I'm glad you can't stop watching. How can I make the action even more exciting?", "I love chase scenes too, they are always thrilling. Can you tell me more about the chase scenes you like?"]
+      },
+    {"tag": "drama",
+"patterns": ["That was so emotional", "I can't stop crying", "I'm so invested in the story"],
+"responses": ["I'm glad you found it emotional. Can you tell me more about what touched you emotionally?", "I'm sorry you're upset. How can I help you feel better?", "I'm glad you're invested in the story. Can you tell me more about why you're so invested?"]
+},
+
+    {"tag": "romantic",
+"patterns": ["I'm in love with you", "I've been thinking about you", "I want to be with you"],
+"responses": ["I'm glad you feel that way. Can you tell me more about why you're in love with me?", "I've been thinking about you too. How can I support you in this moment?", "I want to be with you too. How can we make that happen?"]
+},
+      {"tag": "emotions",
+"patterns": ["sad","I'm feeling really sad", "I'm feeling down", "I can't shake this feeling of sadness"],
+"responses": ["It's normal to feel sad at times. Can you tell me more about what's been going on and how you've been feeling?", "Sadness is a natural part of the human experience. How can I support you in this moment?", "It's important to take the time to process and acknowledge our feelings, even if they're sad. How can I support you right now?"]
+      },
+    {"tag": "friendship",
+"patterns": ["I'm so glad we're friends", "I value our friendship", "I don't know what I would do without you"],
+"responses": ["I'm glad we're friends too. Can you tell me more about what you appreciate about our friendship?", "I value our friendship as well. How can I support you as a friend?", "I'm glad I can be there for you. Can you tell me more about what you need from our friendship?"]
+},
+    {"tag": "family",
+"patterns": ["I love my family", "I'm so grateful for my family", "I can't imagine my life without my family"],
+"responses": ["I'm glad you have a loving family. Can you tell me more about your family?", "I'm glad you're grateful for your family. How has your family supported you?", "Family is important. Can you tell me more about your family and how they've impacted your life?"]
+},
+    {"tag": "suspense",
+"patterns": ["I can't believe that just happened", "I'm on the edge of my seat", "I can't wait to see what happens next"],
+"responses": ["I'm glad you're enjoying the suspense. Can you tell me more about what you found suspenseful?", "I'm glad you're on the edge of your seat. How can I make the suspense even more intense?", "I'm glad you're excited to see what happens next. Can you tell me more about what you're hoping to see happen next?"]
+},
+    {"tag": "horror",
+"patterns": ["That was so scary!", "I'm terrified", "I can't stop shaking"],
+"responses": ["I'm sorry you found it scary. Can you tell me more about what scared you?", "Being scared can be thrilling, but I understand if it's too much. How can I help you feel better?", "It's okay to be scared.Can you tell me more about what you experienced that caused you to feel scared?"]
+},
+    {"tag": "romantic-comedy",
+"patterns": ["That was so cute!", "I love the romance", "I can't stop smiling"],
+"responses": ["I'm glad you found it cute. Can you tell me more about what you found romantic?", "I'm glad you're enjoying the romance. How can I make it even more romantic?", "I'm glad you're smiling. Can you tell me more about what made you smile?"]
+},
+    {"tag": "science-fiction",
+"patterns": ["That was so futuristic!", "I love the technology", "I can't stop thinking about the possibilities"],
+"responses": ["I'm glad you found it futuristic. Can you tell me more about what you found interesting?", "I'm glad you're interested in technology. How can I make the technology even more advanced?", "I'm glad you're thinking about the possibilities. Can you tell me more about what you're imagining?"]
+},
+    {"tag": "animation",
+"patterns": ["That was so cute!", "I love the animation", "I can't stop watching"],
+"responses": ["I'm glad you found it cute. Can you tell me more about what you liked about the animation?", "I'm glad you're enjoying the animation. How can I make it even more visually appealing?", "I'm glad you're watching. Can you tell me more about what you're watching?"]
+},{"tag": "mystery",
+"patterns": ["I can't believe the twist!", "I love the mystery", "I can't wait to see what happens next"],
+"responses": ["I'm glad you found the twist surprising. Can you tell me more about what you found surprising?", "I'm glad you're enjoying the mystery. How can I make the mystery even more intriguing?", "I'm glad you're excited to see what happens next. Can you tell me more about what you're hoping to see what happen next?"]
+},
+    {"tag: "crime",
+"patterns": ["I can't believe the criminal got away", "I love crime dramas", "I'm on the edge of my seat"],
+"responses": ["I'm sorry the criminal got away. Can you tell me more about what happened?", "I'm glad you're enjoying the crime drama. How can I make it even more suspenseful?", "I'm glad you're on the edge of your seat. Can you tell me more about what you're hoping will happen next?"]
+},
+    {"tag": "fantasy",
+"patterns": ["I can't believe the magic!", "I love the fantasy world", "I can't wait to see what happens next"],
+"responses": ["I'm glad you're enjoying the fantasy world. Can you tell me more about what you find magical?", "I'm glad you're enjoying the fantasy world. How can I make it even more fantastical?", "I'm glad you're excited to see what happens next. Can you tell me more about what you're hoping will happen next?"]
+},{"tag": "fantasy",
+"patterns": ["I can't believe the magic!", "I love the fantasy world", "I can't wait to see what happens next"],
+"responses": ["I'm glad you're enjoying the fantasy world. Can you tell me more about what you find magical?", "I'm glad you're enjoying the fantasy world. How can I make it even more fantastical?", "I'm glad you're excited to see what happens next. Can you tell me more about what you're hoping will happen next?"]
+},{"tag": "superhero",
+"patterns": ["I can't believe the superhero saved the day", "I love the action", "I'm excited for the next adventure"],
+"responses": ["I'm glad the superhero saved the day. Can you tell me more about what happened?", "I'm glad you're enjoying the action. How can I make it even more action-packed?", "I'm glad you're excited for the next adventure. Can you tell me more about what you're hoping will happen next?"]
+},
+    {"tag": "historical",
+"patterns": ["I can't believe that really happened", "I love learning about history", "I'm fascinated by the past"],
+"responses": ["I'm glad you're interested in history. Can you tell me more about what you find fascinating?", "I'm glad you're learning about history. How can I make it even more interesting?", "I'm glad you're fascinated by the past. Can you tell me more about what you're interested in?"]
+},
+    {"tag": "documentary",
+"patterns": ["I can't believe that's true", "I love learning from documentaries", "I'm fascinated by the subject matter"],
+"responses": ["I'm glad you're interested in learning from documentaries. Can you tell me more about what you find fascinating?", "I'm glad you're interested in documentaries. How can I make the documentary even more informative?", "I'm glad you're fascinated by the subject matter. Can you tell me more about what you're interested in?"]
+},
       {"tag": "lemmatize",
 "patterns": ["Reduce this word to its base form", "Find the lemma of this word", "Lemmatize this word"],
 "responses": ["I can use the nltk library's WordNetLemmatizer to reduce the word to its base form for you.", "Sure, I can use the nltk library's WordNetLemmatizer to find the lemma of the word for you.", "I can use the nltk library's WordNetLemmatizer to lemmatize the word for you."]
