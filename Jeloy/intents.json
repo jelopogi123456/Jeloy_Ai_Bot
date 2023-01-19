@@ -1,0 +1,39 @@
+{
+  "intents" : [
+    {
+      "tag": "greetings",
+      "patterns": ["hello", "hey", "hi", "good day", "greetings", "what's up?" , "how is it going?"],
+      "responses" : ["Hello!", "Hey!", "What can I do for you?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see ya", "see you next time", "chao", "bye bro" , "bye sis"],
+      "responses" : ["Noooo , Dont say goodbye :( just kidding ", "See you next time!", "Bye Muah"]
+    },
+    {
+      "tag": "age",
+      "patterns": ["how old", "how old are you?", "what is your age?"],
+      "responses" : ["Mark Anjelo Perez is the one who made me and he is 20 years old!", "20 years old!"]
+    },
+    {
+      "tag": "name",
+      "patterns": ["What is your name?", "What should I call you?", "what's your name?", "who are you?", "can you tell me your name?"],
+      "responses" : ["My name is Jeloy", "I'm Jeloy!", "I'm Jeloy the bot of Mark Perez"]
+    },
+    {
+      "tag": "shop",
+      "patterns": ["I'd like to buy something", "What are your products?", "what do you recommend?", "what are you selling?"],
+      "responses" : ["I don't know anything about this, I recommend that you should search on Google hehe ^_^"]
+    },
+    {
+      "tag": "hours",
+      "patterns": ["when are you guys open?", "what are your hours?", "hours of operation"],
+      "responses" : ["24/7"]
+    },
+    {
+      "tag": "stocks",
+      "patterns": ["What stocks must I own?", "stocks to own", "best stocks"],
+      "responses" : ["The best stocks to own are the 'Blue Chip' companies like : 'SM', 'AC','JFC','JGS', etc.."]
+    }
+  ]
+}
