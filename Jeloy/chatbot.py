@@ -60,3 +60,10 @@ if model:
 else:
     print("Error Loading Model")
 
+
+while True:
+    user_input = input("What would you like to say to the chatbot? (Type 'exit' to quit) ")
+    if user_input.lower() == "exit":
+        break
+    response = chatbot_response(user_input)
+    print(response)
