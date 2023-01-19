@@ -4,8 +4,6 @@ import pickle
 import numpy as np
 
 import nltk
-
-
 from nltk.stem import WordNetLemmatizer
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
@@ -13,6 +11,7 @@ from tensorflow.keras.layers import Dense, Activation, Dropout
 from tensorflow.keras.optimizers import SGD
 
 lemmatizer = WordNetLemmatizer()
+
 with open('intents.json') as json_file:
     intents = json.load(json_file)
 
@@ -41,13 +40,10 @@ pickle.dump(classes, open('classes.pkl', 'wb'))
 training = []
 output_empty = [0] * len(classes)
 
+# Fix 1: removed max_length
 
-max_length = max([len(doc) for doc, _ in documents])
-training = []
 for doc, tag in documents:
     bag = [1 if word in doc else 0 for word in words]
-    # Pad the bag of words representation with zeroes
-    bag += [0] * (max_length - len(bag))
     output_row = [0] * len(classes)
     output_row[classes.index(tag)] = 1
     training.append([bag, output_row])
@@ -73,5 +69,6 @@ sgd = SGD(learning_rate=0.01, momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
 
 hist = model.fit(np.array(train_x), np.array(train_y), epochs=200, batch_size = 5 , verbose = 1)
-model.save('chatbotmodel.h5', hist)
+model.save('chatbotmodel.h5')
+pickle.dump(hist.history, open('hist.pkl', 'wb'))
 print('Done')
