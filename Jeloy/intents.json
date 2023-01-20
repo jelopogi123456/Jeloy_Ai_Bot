@@ -421,9 +421,16 @@
       },
       {"tag": "restaurant", "patterns": ["I'm looking for a good restaurant to eat at", "I want to try a new restaurant", "I need a restaurant recommendation"], "responses": ["I can recommend the restaurant 'The Cheesecake Factory' for a great dining experience. They have a wide variety of options and delicious cheesecakes. ", "If you're looking for a new restaurant to try, I suggest 'The Olive Garden' for their hearty Italian dishes and warm atmosphere. ", "I'm glad you're looking for a restaurant recommendation. How about 'The Outback Steakhouse' for a hearty meal and great service."]
       },
-  {"tag": "travel", "patterns": ["I want to go on a vacation", "I need a travel recommendation", "I'm looking for a place to visit"], "responses": ["I can recommend the city of Paris for a romantic and cultural getaway. The city of lights is sure to leave a lasting impression. ", "If you're looking for a travel recommendation, I suggest visiting the beaches of Hawaii. The warm weather and crystal clear water is sure to be a vacation highlight. ", "I'm glad you're looking for a place to visit. How about the Grand Canyon for a natural wonder that will take your breath away."]
+  {"tag": "travel", "patterns": ["I want to go on a vacation", "What's your favorite travel destination?",
+            "Where have you traveled to?",
+            "What's on your travel bucket list?",
+            "What's your favorite thing about traveling?","I need a travel recommendation", "I'm looking for a place to visit"],
+    "responses": ["I can recommend the city of Paris for a romantic and cultural getaway. The city of lights is sure to leave a lasting impression. ", "If you're looking for a travel recommendation, I suggest visiting the beaches of Hawaii. The warm weather and crystal clear water is sure to be a vacation highlight. ", "I'm glad you're looking for a place to visit. How about the Grand Canyon for a natural wonder that will take your breath away."]
   },
-      {"tag": "beauty products" , "patterns": ["I want to try a new beauty product", "I need a beauty product recommendation", "I'm looking for a new skincare routine"], "responses": ["I can recommend the brand 'Kiehl's' for high-quality beauty products. Their Clearly Corrective Dark Spot Solution is a personal favorite. ", "If you're looking for a new beauty product to try, I suggest the brand 'Tarte' for their natural and cruelty-free cosmetics. ", "I'm glad you're looking for a new skincare routine. How about the brand 'CeraVe' for gentle and effective skincare options."]
+      {"tag": "beauty products" , "patterns": ["I want to try a new beauty product", "I love to travel and I have many favorite destinations, but if I had to pick one, it would be Japan.",
+            "I've been to many places, some of my favorites include France, Italy and Australia.",
+            "I have a long travel bucket list, but one of the top places I want to visit is New Zealand.",
+            "I love experiencing new cultures and trying new foods when I travel.","I need a beauty product recommendation", "I'm looking for a new skincare routine"], "responses": ["I can recommend the brand 'Kiehl's' for high-quality beauty products. Their Clearly Corrective Dark Spot Solution is a personal favorite. ", "If you're looking for a new beauty product to try, I suggest the brand 'Tarte' for their natural and cruelty-free cosmetics. ", "I'm glad you're looking for a new skincare routine. How about the brand 'CeraVe' for gentle and effective skincare options."]
       },
       {"tag": "music", "patterns": ["I want to listen to some new music", "I need a music recommendation", "I'm in the mood for some upbeat songs"], "responses": ["I can recommend the album '1989' by Taylor Swift for a great mix of upbeat and catchy pop songs. ", "If you're looking for a new music recommendation, I suggest the album 'Lemonade' by Beyoncé. It's a powerful and diverse album that's sure to please. ", "I'm glad you're in the mood for some upbeat songs. How about the album '24K Magic' by Bruno Mars for a fun and upbeat listening experience."]
       },
@@ -459,7 +466,132 @@
       {"tag": "remove_stop_words",
 "patterns": ["Remove stop words from this text", "Eliminate stop words from this text", "Delete stop words from this text"],
 "responses": ["I can use the nltk library's stopwords list and the list comprehension method to remove stop words from the text for you.", "Sure, I can use the nltk library's stopwords list and the list comprehension method to eliminate stop words from the text for you.", "I can use the nltk library's stopwords list and the list comprehension method to delete stop words from the text for you."]
-      }
-
+      },
+    {
+            "tag": "disagreement",
+            "patterns": [
+                "They do not!",
+                "They do to!",
+                "No",
+            ],
+            "responses": [
+                "It seems like there is disagreement on this topic.",
+                "I can see that there are differing opinions.",
+                "It appears that there is a disagreement."
+            ]
+        },
+        {
+            "tag": "hope",
+            "patterns": [
+                "I hope so.",
+            ],
+            "responses": [
+                "I understand your hope.",
+                "I can sense your hope.",
+                "I can feel your hope."
+            ]
+        },
+        {
+            "tag": "concern",
+            "patterns": [
+                "She okay?",
+                "Is she okay?",
+                "How is she?",
+            ],
+            "responses": [
+                "It seems like you're concerned about someone.",
+                "I can see that you're worried about someone.",
+                "It appears that you're concerned about someone's well-being."
+            ]
+        },
+     {
+                "tag": "leave",
+                "patterns": [
+                    "Let's go.",
+                    "Let us go.",
+                    "Come on, let's go.",
+                ],
+                "responses": [
+                    "I understand that you want to leave.",
+                    "I can sense that you want to leave.",
+                    "I can see that you want to go."
+                ]
+            },
+            {
+                "tag": "surprise",
+                "patterns": [
+                    "Wow",
+                    "Oh my god",
+                    "Wow, that's amazing",
+                ],
+                "responses": [
+                    "I can see that you're surprised.",
+                    "It seems like you're amazed.",
+                    "It appears that you're impressed."
+                ]
+            },
+            {
+                "tag": "lying",
+                "patterns": [
+                    "Okay -- you're gonna need to learn how to lie.",
+                    "I'm kidding. You know how sometimes you just become this persona? And you don't know how to quit?",
+                ],
+                "responses": [
+                    "It seems like you're talking about learning how to lie.",
+                    "I can see that you're discussing the idea of becoming a persona.",
+                    "It appears that you're mentioning the difficulty of quitting a persona."
+                ]
+            },
+    {
+            "tag": "selfishness",
+            "patterns": [
+                "You always been this selfish?",
+                "Then that's all you had to say.",
+                "You never wanted to go out with 'me, did you?",
+                "I looked for you back at the party, but you always seemed to be 'occupied'."
+            ],
+            "responses": [
+                "I'm sorry you feel that way. I didn't mean to come across as selfish.",
+                "I understand how you feel. Can we talk more about this?"
+            ]
+        },
+        {
+            "tag": "relationship",
+            "patterns": [
+                "Looks like things worked out tonight, huh?",
+                "I believe we share an art instructor",
+                "So that's the kind of guy she likes? Pretty ones?",
+                "Lesbian? No. I found a picture of Jared Leto in one of her drawers, so I'm pretty sure she's not harboring same-sex tendencies."
+            ],
+            "responses": [
+                "I'm not sure what you mean by that. Can you elaborate?",
+                "I'd prefer not to talk about my personal relationships right now."
+            ]
+        },
+        {
+            "tag": "hair",
+            "patterns": [
+                "Like my fear of wearing pastels?",
+                "The 'real you'.",
+                "What good stuff?",
+                "I figured you'd get to the good stuff eventually.",
+                "Thank God! If I had to hear one more story about your coiffure...",
+                "Me. This endless ...blonde babble. I'm like, boring myself.",
+                "What crap?",
+                "Do you listen to this crap?",
+                "No...",
+                "Then Guillermo says, 'If you go any lighter, you're gonna look like an extra on 90210'.",
+                "Tons",
+                "Who knows? All I've ever heard her say is that she'd dip before dating a guy that smokes.",
+                "Eber's Deep Condition..."
+            ],
+            "responses": [
+                "I understand that you have a fear of wearing pastels. Is there anything I can do to help?",
+                "I'm not sure what you mean by 'the real me'.",
+                "I'm sorry if I've said something to offend you.",
+                "Can you tell me more about what you find interesting about my hair?",
+                "I apologize if my hair related stories are boring to you."
+            ]
+        }
   ]
 }
