@@ -8,8 +8,8 @@ Instruction to run the code:
 
 A.) Download: you can insert it to your VSCode Pycharm or Google Collab
 
-1.) download the main.py, this is the training code for my bot
-2.) download the intents.py,  this is the code that I made for every pattern and response of the bot 
+1.) download the main.py, this is the training code for my bot.
+2.) download the intents.py,  this is the code that I made for every pattern and response of the bot. 
 3.) download the chatbot.py, this is where you will run the chat bot.
 
 
