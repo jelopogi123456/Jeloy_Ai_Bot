@@ -2,7 +2,10 @@
 "A simple AI bot using NLP &amp; ML. Trained on intents &amp; responses. Built using Python, TensorFlow &amp; NLTK. Easy to customize for different use cases. Goal: create a basic AI bot to understand &amp; respond to user inputs."
 
 
-Instructions:
+Instruction to run the code:
+
+
+
 A.) Download: you can insert it to your VSCode Pycharm or Google Collab
 
 1.) download the main.py, this is the training code for my bot
